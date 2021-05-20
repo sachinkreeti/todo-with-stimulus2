@@ -15,7 +15,7 @@
   <tbody>
     <% @todos.each do |todo| %>
       <tr>
-        <td><%= check_box_tag('completed', todo.completed_at, todo.completed_at ? true : false) %></td>
+        <td><%= check_box_tag(nil, nil, todo.completed_at?, data: { reflex: "click->ExampleReflex#toggle", id: todo.id }) %></td>
         <td><%= todo.title %></td>
         <td><%= todo.completed_at %></td>
         <td><%= link_to 'Show', todo %></td>
