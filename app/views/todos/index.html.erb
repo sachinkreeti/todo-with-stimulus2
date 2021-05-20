@@ -12,6 +12,8 @@
     </tr>
   </thead>
 
+  <%= render "form", todo: @todo %>
+
   <tbody>
     <% @todos.each do |todo| %>
       <tr>

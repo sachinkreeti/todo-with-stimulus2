@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, data: { reflex: "change->ExampleReflex#form" } %>
   </div>
 
   <div class="field">
